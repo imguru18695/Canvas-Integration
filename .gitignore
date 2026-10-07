@@ -1,3 +1,23 @@
 __pycache__/
 *.egg-info/
-.env
+.pytest_cache/
+.venv/
+# Secrets
+.env*
+*.pem
+*.key
+# Data exports: never commit Canvas data
+*.json
+*.csv
+*.xlsx
+*.xls
+*.sqlite
+*.sqlite3
+*.db
+*.log
+*.pdf
+*.zip
+data/
+output/
+exports/
+cache/

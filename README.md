@@ -21,3 +21,9 @@ Tokens are personal credentials; never commit them. UT may restrict token creati
 
 ## Tests
 `pytest`
+
+## Keeping data out of GitHub
+After cloning, enable the guard hook: `git config core.hooksPath .githooks`.
+It blocks commits that contain tokens, Canvas-style data fields, or files outside
+the source/doc folders; CI re-runs the same check. Never use `--no-verify`.
+Data exports are git-ignored; write any saved output outside the repo.
