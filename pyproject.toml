@@ -1,0 +1,15 @@
+[project]
+name = "canvas-integration"
+version = "0.1.0"
+description = "Client and CLI for the UT Austin Canvas LMS REST API"
+requires-python = ">=3.9"
+dependencies = ["requests>=2.28"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+canvas = "canvas_integration.cli:main"
+
+[tool.setuptools]
+packages = ["canvas_integration"]
